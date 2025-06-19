@@ -14,7 +14,7 @@ app.post('/chat', async (req, res) => {
     const response = await axios.post(
       'https://api.openai.com/v1/chat/completions',
       {
-        model: 'gpt-4',
+        model: 'gpt-4o',
         messages: [
           { role: 'system', content: 'You are Bardy, a chatbot that recommends bars based on vibe and mood. Keep it short, classy, and NYC-based.' },
           { role: 'user', content: prompt }
